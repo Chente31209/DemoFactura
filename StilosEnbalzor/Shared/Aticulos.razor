@@ -1,0 +1,73 @@
+﻿<div class="grid  grid-rows-2" >
+    <div style="padding: 10px">
+        
+            <input type="text"
+
+               class="appearance-none rounded-none  w-1/2 px-3 py-2  border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
+               placeholder="Dominio Fical" />
+             <button
+                class="group relative w-100  px-3 py-2 justify-center  border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                Agregar 
+        </button>
+       
+    </div >
+    
+    <div style="padding: 10px">
+        <div>
+            <table class="min-w-full divide-y divide-gray-200">
+                <thead>
+                    <tr>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-300">
+                            Articulo
+                        </th>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-400">
+                            Nombre
+                        </th>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-300">
+                            UM
+                        </th>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-400">
+                            Unidades
+                        </th>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-300">
+                            Precio
+                        </th>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-400">
+                            Decuento
+                        </th>
+                        <th
+                            class="px-6 py-3 text-left text-xs font-medium text-black uppercase tracking-wider bg-pink-300">
+                            Importe
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    @foreach (var item in Articulos)
+                    {
+                        <tr>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-300">@item.articulo</td>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-400">@item.Nombre</td>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-300">@item.Um</td>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-400">@item.Unidades</td>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-300">@item.Precio</td>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-400">@item.Decuento</td>
+                            <td class="px-6 py-4 whitespace-nowrap bg-pink-300">@item.Importe</td>
+
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    </div>
+@code
+{
+    [Parameter]
+    public List<Articulo> Articulos { get; set; }
+}

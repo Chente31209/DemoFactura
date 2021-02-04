@@ -1,0 +1,43 @@
+﻿<div>
+    <label> Uso cfdi </label>
+    <select class="group relative w-100  px-3 py-2 justify-center  border border-transparent text-sm
+                        font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none
+                        focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            style="width:120px">
+        >
+        @foreach(var i in cfdi)
+        { 
+            <option class="px-3">@i</option>
+        }
+
+    </select>
+</div>
+@code{
+    List<string> cfdi = new List<string>
+    {
+        "Adquisición de mercancias",
+        "Devoluciones, descuentos o bonificaciones",
+        "Gastos en general",
+        "Construcciones",
+        "Mobilario y equipo de oficina por inversiones",
+        "Equipo de transporte",
+        "Equipo de computo y accesorios",
+        "Dados, troqueles, moldes,\n matrices y herramental",
+        "Comunicaciones telefónicas",
+        "Comunicaciones satelitales",
+        "Otra maquinaria y equipo",
+        "Honorarios médicos, \ndentales y gastos hospitalarios.",
+        "Gastos médicos por\n incapacidad o discapacidad",
+        "Gastos funerales.",
+        "Donativos.",
+        "Intereses reales efectivamente pagados \n" +
+        " por créditos hipotecarios (casa habitación).",
+        "Aportaciones voluntarias al SAR.",
+        "Primas por seguros de gastos médicos.",
+        "Gastos de transportación escolar obligatoria.",
+        "Depósitos en cuentas para el ahorro, \n primas que tengan como base planes de pensiones.",
+        "Pagos por servicios educativos \n (colegiaturas)",
+        "Por definir"
+    };
+
+}

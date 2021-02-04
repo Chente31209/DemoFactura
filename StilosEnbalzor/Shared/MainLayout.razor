@@ -1,0 +1,37 @@
+﻿@inherits LayoutComponentBase
+<div class="grid  grid-cols-5">
+
+    <div class="sidebar  ">
+        <NavMenu MenuItems="MenuItems" OnMenuItemClick="OnInitialized" />
+    </div>
+    
+    <div class="main col-start-2 col-end-6">
+        @Body
+    </div>
+
+</div>
+    @code
+{
+        public MenuItem[] MenuItems { get; set; }
+        protected override void OnInitialized()
+        {
+            this.loadMenuItems();
+        }
+        public void MenuItemClick(MenuItem item)
+        {
+            foreach (var menuItem in MenuItems)
+            {
+                menuItem.Active = false;
+            }
+            item.Active = true;
+        }
+        private void loadMenuItems()
+        {
+            this.MenuItems = new MenuItem[] {
+        new MenuItem() { Caption = "Fatura", Active = true ,href="/GenerarFatura" },
+        new MenuItem() { Caption = "Ejemplo de tablas", Active = false ,href="/Table" },
+        new MenuItem() { Caption = "Formulario", Active = false ,href= "/from" }
+
+};
+        }
+    }
