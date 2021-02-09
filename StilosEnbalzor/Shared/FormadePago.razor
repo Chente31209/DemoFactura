@@ -1,22 +1,23 @@
 ﻿<div>
     <label>
-        Forma De Cobro <br />
-        (Forma de cobro)
+        Forma De Cobro
     </label>
-    <label> Tipo de comprobate </label>
-    <select class="group relative w-100  px-3 py-2 justify-center  border border-transparent text-sm
+    <select class="group relative w-100  px-3 py-2 justify-self-start  border border-transparent text-sm
                         font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none
-                        focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            style="width:120px">
-        >
+                        focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 w-30"
+                 bind="@FormaDeCobro">
+        
         @foreach (var i in cobro)
         {
-            <option class="px-3">@i</option>
+            <option class="px-3" value="@i">@i</option>
         }
 
     </select>
+    
 </div>
 @code{
+    [Parameter]
+    public string FormaDeCobro { get; set; }
     List<string> cobro = new List<string>
     {
         "Efectivo",
@@ -42,5 +43,4 @@
         "Intermediario Pagos",
         "Por Definir"
     };
-
 }

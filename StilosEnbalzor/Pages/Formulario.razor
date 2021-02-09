@@ -1,36 +1,80 @@
 ﻿@page "/from"
-
 <div class="grid grid-rows-2 grid-cols-2">
     <div class="bg-yellow-300"></div>
     <div class="bg-yellow-500">
-        <form>
-            <div>
-                <label class="underline text-green-900">Nobres</label>
-                <input type="text" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Nombres" />
-            </div>
-            <div>
-                <label class="underline text-green-900">Apellido</label>
-                <input type="text" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Apellidos" />
-            </div>
-            <div>
-                <label class="underline text-green-900">Contaseña</label>
-                <input type="password" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
-            </div>
-            <div>
-                <label class="underline text-green-900">Confirma</label>
-                <input type="password" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" />
-            </div>
-            <br />
-            <div>
-                <button class="bg-red-900 font-mono text-white">Reguistrar</button>
-            </div>
-        </form>
+
+        <div>
+            <label class="underline text-green-900">Nobres</label>
+            <input type="text" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Nombres"
+                   value="@Nombre"
+                   @onchange="@((ChangeEventArgs __e) => Nombre =
+                            __e.Value.ToString())" />
+        </div>
+        <div>
+            <label class="underline text-green-900">Apellido</label>
+            <input type="text" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Apellidos" 
+                   value="@Apellido"
+                   @onchange="@((ChangeEventArgs __e) => Apellido =
+                            __e.Value.ToString())" />
+        </div>
+        <div>
+            <label class="underline text-green-900">Contaseña</label>
+            <input type="password" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password"
+                    value="@Contaseña"
+                   @onchange="@((ChangeEventArgs __e) => Contaseña =
+                            __e.Value.ToString())" />
+        </div>
+        <div>
+            <label class="underline text-green-900">Confirma</label>
+            <input type="password" class="bg-yellow-200 appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm" placeholder="Password" 
+                    value="@Confirma"
+                   @onchange="@((ChangeEventArgs __e) => Confirma =
+                            __e.Value.ToString())" />
+        </div>
+        <br />
+        <div>
+            <button class="bg-red-900 font-mono text-white"
+                    @onclick="registar">
+                Reguistrar
+            </button>
+        </div>
+
     </div>
-    <div class="bg-yellow-900"></div>
+    <div class="bg-yellow-900">
+        <label>@Nombrem </label>
+
+        <label>@Apellidom</label>
+
+        <label>@Contaseñam</label>
+
+        <label>@Confirmam</label>
+    </div>
+
+   
 
     <div class="bg-blue-400"></div>
 </div>
 
-@code {
+    @code {
 
-}
+        public string Nombre { get; set; }
+        public string Apellido { get; set; }
+        public string Contaseña { get; set; }
+        public string Confirma { get; set; }
+
+        public string Nombrem { get; set; }
+        public string Apellidom { get; set; }
+        public string Contaseñam { get; set; }
+        public string Confirmam { get; set; }
+
+
+        public void registar()
+        {
+            Nombrem = Nombre;
+            Apellidom = Apellido;
+            Contaseñam = Contaseña;
+            Confirmam = Confirma;
+            return;
+        }
+
+    }

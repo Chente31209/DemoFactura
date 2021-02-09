@@ -1,18 +1,21 @@
 ﻿<div>
     <label> Uso cfdi </label>
-    <select class="group relative w-100  px-3 py-2 justify-center  border border-transparent text-sm
+    <select class="group relative w-100  px-3 py-2 justify-self-start  border border-transparent text-sm
                         font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none
                         focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-            style="width:120px">
+            style="width:200px"
+            bind="@UsoCFDI">
         >
         @foreach(var i in cfdi)
         { 
-            <option class="px-3">@i</option>
+            <option class="w-1" value="@i">@i</option>
         }
 
     </select>
 </div>
 @code{
+    [Parameter]
+    public string UsoCFDI { get; set; }
     List<string> cfdi = new List<string>
     {
         "Adquisición de mercancias",
@@ -22,15 +25,15 @@
         "Mobilario y equipo de oficina por inversiones",
         "Equipo de transporte",
         "Equipo de computo y accesorios",
-        "Dados, troqueles, moldes,\n matrices y herramental",
+        "Dados, troqueles, moldes, matrices y herramental",
         "Comunicaciones telefónicas",
         "Comunicaciones satelitales",
         "Otra maquinaria y equipo",
-        "Honorarios médicos, \ndentales y gastos hospitalarios.",
-        "Gastos médicos por\n incapacidad o discapacidad",
+        "Honorarios médicos, dentales y gastos hospitalarios.",
+        "Gastos médicos por incapacidad o discapacidad",
         "Gastos funerales.",
         "Donativos.",
-        "Intereses reales efectivamente pagados \n" +
+        "Intereses reales efectivamente pagados" +
         " por créditos hipotecarios (casa habitación).",
         "Aportaciones voluntarias al SAR.",
         "Primas por seguros de gastos médicos.",

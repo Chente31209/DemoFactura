@@ -79,6 +79,13 @@ using StilosEnbalzor.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\_Imports.razor"
+using StilosEnbalzor.Service;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/")]
     public partial class Index : Microsoft.AspNetCore.Components.ComponentBase
     {

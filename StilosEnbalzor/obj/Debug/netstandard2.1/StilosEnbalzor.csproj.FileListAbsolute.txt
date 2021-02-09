@@ -354,8 +354,6 @@ D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\Razor\Shared\InfoB.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Aticulos.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\Razor\Shared\Aticulos.razor.g.cs
-D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\AutoCoplate.razor.g.cs
-D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\Razor\Shared\AutoCoplate.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\ClienteDominio.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\Fecha.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\RazorDeclaration\Shared\FolioSerie.razor.g.cs
@@ -369,6 +367,6 @@ D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\Razor\Shared\Moneda.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\Razor\Shared\UsoCfd.razor.g.cs
 D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\StilosEnbalzor.csprojAssemblyReference.cache
-D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\integrity\jAFo6Pu-EET2adbzlrZc48f-sVsSun0Ywk4bXoVBNX4=.hash
-D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\integrity\5eWNqF1irlBqNrXOmtXd7rLmxTBIw1oB_V54bvbCi1c=.hash
-D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\integrity\2a4bEprVopN1sOexR00aleahZTX6TJlhqTZi_tXdwqg=.hash
+D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\integrity\ZO1i7G7FkB_1Dg0_WRBBJXoz6x3xPRnAQqeM3r4wLtQ=.hash
+D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\integrity\EFZKTyKWBsgVgct2gIugrs4QbX0CB5pPWH_3DhhApq4=.hash
+D:\User\Vicente\Proyectos\Web Proyets\Sample gulm\StilosEnbalzor\StilosEnbalzor\obj\Debug\netstandard2.1\integrity\6AFBGvfMwj769U3qI-lQVKaXf7dnrY8H430aoa8sATc=.hash
