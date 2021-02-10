@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZO1i7G7FkB_1Dg0_WRBBJXoz6x3xPRnAQqeM3r4wLtQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\Olk-waqmGAx5p8T9VSbbOfJPiLbEE-t2TdYOHy0MLqs=.hash",
       "Source": "D:\\User\\Vicente\\Proyectos\\Web Proyets\\Sample gulm\\StilosEnbalzor\\StilosEnbalzor\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\StilosEnbalzor.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/StilosEnbalzor.dll.br"
     },
@@ -256,7 +256,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\EFZKTyKWBsgVgct2gIugrs4QbX0CB5pPWH_3DhhApq4=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\J5AwFJAiob9E4ElkH0xrPw6YBd63yUT_AUXRW0sl_K8=.hash",
       "Source": "D:\\User\\Vicente\\Proyectos\\Web Proyets\\Sample gulm\\StilosEnbalzor\\StilosEnbalzor\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\StilosEnbalzor.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/StilosEnbalzor.pdb.br"
     },
@@ -281,7 +281,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\6AFBGvfMwj769U3qI-lQVKaXf7dnrY8H430aoa8sATc=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\YYP46qWfv8cEs_OMHixdJTw31D1_MpeFVhYjgbBDLJ0=.hash",
       "Source": "D:\\User\\Vicente\\Proyectos\\Web Proyets\\Sample gulm\\StilosEnbalzor\\StilosEnbalzor\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

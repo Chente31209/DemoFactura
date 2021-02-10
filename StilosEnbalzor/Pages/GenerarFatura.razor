@@ -6,7 +6,7 @@
     <diiv>
 
         <InfoB comprobate="@ComprobateS"
-               OnFacturar="crear"></InfoB>
+              OnSaveClick="crear" ></InfoB>
     </diiv>
     <diiv>
         <Aticulos Articulos="@service.GetList()"></Aticulos>
@@ -17,7 +17,7 @@
             <button class="group relative w-100  px-3 py-2 justify-self-start  border border-transparent
                      text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
                      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                    @onclick="crear">
+                    >
                 Facturar
             </button>
         </div>
@@ -36,7 +36,10 @@
 
     public Comprobate GetComprobate()
     {
-        return new Comprobate();
+        return new Comprobate()
+        {
+            Folio = "1234"
+        };
     }
 
     public List<string> moneda = new List<string>

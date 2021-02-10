@@ -1,11 +1,11 @@
-﻿<form>
+﻿<EditForm Model="@comprobate" OnValidSubmit="@(e => OnSaveClick.InvokeAsync(comprobate))">
     <div class="grid grid-rows-3">
         <div>
             <div class="grid grid-cols-4" style="padding: 10px">
-                <div >
-                    
-                       <FolioSerie Folio="@comprobate.Folio"></FolioSerie> 
-                       
+                <div>
+
+                    <FolioSerie Folio="@comprobate.Folio"></FolioSerie>
+
                 </div>
                 <div class="grid col-start-2 col-end3">
                     <UsoCfd UsoCFDI="@comprobate.UsoFDCI"></UsoCfd>
@@ -21,15 +21,15 @@
                         <option value="Traslado">Traslado</option>
 
                     </select>
-                    <p>1 @comprobate.TipoDeComprobate</p>
+                   
                 </div>
             </div>
         </div>
 
         <div class="grid grid-cols-2" style="padding: 10px">
             <div>
-               <ClienteDominio Cliente="@comprobate.Cliente"
-                               DomicilioFiscal="@comprobate.DomiciloFical"></ClienteDominio> 
+                <ClienteDominio Cliente="@comprobate.Cliente"
+                                DomicilioFiscal="@comprobate.DomiciloFical"></ClienteDominio>
             </div>
             <div>
                 <Moneda Monedas="@moneda"
@@ -44,17 +44,25 @@
                 <FormadePago FormaDeCobro="@comprobate.FormaDeCobro"></FormadePago>
             </div>
 
-            
+
 
         </div>
+        <button type="submit" class="group relative w-100  px-3 py-2 justify-self-start  border border-transparent
+                     text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700
+                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Save</button>
     </div>
-</form>
+</EditForm>
 
 @code {
 
     [Parameter]
     public Comprobate comprobate { get; set; }
     
+    [Parameter]
+    public EventCallback<Comprobate>
+    OnSaveClick
+    { get; set; }
+
 
 
     public List<string> moneda = new List<string>
@@ -66,6 +74,6 @@
         "Dolar Canadiense "
 
         };
-    
+
 
 }
